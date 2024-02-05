@@ -23,6 +23,10 @@ use App\Http\Controllers\paymentController;
 Route::get('/', function () {
     return view('pages.auth.login1');
 });
+Route::get('/usershop', function () {
+    return view('pages.user.shop');
+});
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('home', function () {
